@@ -49,6 +49,19 @@ pip install -e .
 
 ## Usage
 
+### Quick Start Demo
+
+Run the complete demo (starts vulnerable app, runs scanner, displays report):
+```bash
+python demo.py
+```
+
+This will automatically:
+1. Start the vulnerable application
+2. Run a security audit
+3. Display the results
+4. Clean up and stop the application
+
 ### Running the Vulnerable Application
 
 Start the vulnerable web application:
