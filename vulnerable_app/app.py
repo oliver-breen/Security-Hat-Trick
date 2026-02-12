@@ -144,4 +144,7 @@ if __name__ == '__main__':
     with open('files/sample.txt', 'w') as f:
         f.write('This is a sample file.')
     
+    # WARNING: NEVER USE THESE SETTINGS IN PRODUCTION!
+    # debug=True and host='0.0.0.0' expose sensitive debugging information to all network interfaces
+    # This is intentionally vulnerable for testing purposes only
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -113,10 +113,10 @@ class SecurityAuditor:
                                             'recommendation': 'Use parameterized queries or prepared statements'
                                         })
                                         break
-                            except:
+                            except Exception:
                                 pass
                             
-                except Exception as e:
+                except Exception:
                     pass
     
     def scan_xss(self):
@@ -157,7 +157,7 @@ class SecurityAuditor:
                         })
                         break
                         
-                except Exception as e:
+                except Exception:
                     pass
     
     def scan_command_injection(self):
@@ -207,7 +207,7 @@ class SecurityAuditor:
                             })
                             break
                             
-                except Exception as e:
+                except Exception:
                     pass
     
     def scan_path_traversal(self):
@@ -280,7 +280,7 @@ class SecurityAuditor:
                                 })
                                 break
                             
-                except Exception as e:
+                except Exception:
                     pass
     
     def generate_report(self) -> Dict[str, Any]:

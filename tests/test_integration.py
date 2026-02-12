@@ -32,7 +32,7 @@ def test_server():
             response = requests.get('http://127.0.0.1:5555/', timeout=2)
             if response.status_code == 200:
                 break
-        except:
+        except Exception:
             time.sleep(1)
     
     yield 'http://127.0.0.1:5555'
